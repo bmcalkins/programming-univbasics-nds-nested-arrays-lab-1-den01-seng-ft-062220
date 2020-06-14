@@ -17,10 +17,10 @@ $CONVENTIONAL_PRODUCE = [
 
 def assembled_matrix()
   sorted_matrix = []
- sorted_matrix = [["Grapefruit", "Pineapple", "Oranges", "Watermelon", "Eggplant"], ["Strawberries", "Potatoes", "Grapes", "Avocadoes", "Asparagus"]]
+
   
-sorted_matrix = $ORGANIC_PRODUCE.sort!
-sorted_matrix = $CONVENTIONAL_PRODUCE.sort!
+sorted_matrix.push($ORGANIC_PRODUCE)
+sorted_matrix.push($CONVENTIONAL_PRODUCE)
   
 
 end
