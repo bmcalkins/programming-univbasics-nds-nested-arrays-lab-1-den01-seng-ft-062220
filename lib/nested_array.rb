@@ -1,14 +1,13 @@
 # Examples inspired by U. S. National Organic Standards
 
-ORGANIC_PRODUCE = [
+$ORGANIC_PRODUCE = [
   "Strawberries",
   "Potatoes",
   "Grapes",
   "Avocadoes",
   "Asparagus"
 ]
-
-CONVENTIONAL_PRODUCE = [
+$CONVENTIONAL_PRODUCE = [
   "Grapefruit",
   "Pineapple",
   "Oranges",
@@ -16,12 +15,20 @@ CONVENTIONAL_PRODUCE = [
   "Eggplant"
 ]
 
-def assembled_matrix
+def assembled_matrix()
+ sorted_matrix = [["Grapefruit", "Pineapple", "Oranges", "Watermelon", "Eggplant"], ["Strawberries", "Potatoes", "Grapes", "Avocadoes", "Asparagus"]]
+ 
+sorted_matrix = $ORGANIC_PRODUCE.sort!
+sorted_matrix = $CONVENTIONAL_PRODUCE.sort!
+  
+
+end
+  
   # Build an array that contains both of the above arrays
   # This matrix will represent a produce storage room
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
-end
+
 
 def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
