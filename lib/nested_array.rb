@@ -17,8 +17,6 @@ $CONVENTIONAL_PRODUCE = [
 
 def assembled_matrix()
   sorted_matrix = []
-
-  
 sorted_matrix.push($ORGANIC_PRODUCE)
 sorted_matrix.push($CONVENTIONAL_PRODUCE)
 
